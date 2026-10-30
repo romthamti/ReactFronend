@@ -31,7 +31,7 @@ function Home({ onNavigate }) {
       <Hero
         eyebrow={greeting()}
         title="ยินดีต้อนรับสู่ YangGai"
-        subtitle="แอปสำหรับทีมงาน · React Lesson"
+        subtitle="แอปสำหรับพนักงาน YangGai Technology Co., Ltd."
       />
 
       <div className="page page-overlap">
