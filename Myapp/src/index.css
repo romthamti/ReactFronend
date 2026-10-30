@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #f0f7ff;
+  --card: #ffffff;
+  --text: #475569;
+  --text-h: #0b1e4f;
+  --muted: #8a9bb5;
+  --border: #dbeafe;
+  --accent: #1d4ed8;
+  --accent-2: #0ea5e9;
+  --accent-soft: #e0f2fe;
+  --shadow: 0 1px 2px rgba(26, 21, 48, 0.04), 0 12px 32px -12px rgba(29, 78, 216, 0.18);
+  --nav-bg: rgba(255, 255, 255, 0.85);
+
+  /* สีไล่ของ app bar + hero (ใช้ทั้งโหมดสว่างและมืด)
+     ไล่แนวนอน (90deg) เพื่อให้ app bar กับ hero ต่อกันเนียนไม่มีรอยต่อ */
+  --hero: linear-gradient(90deg, #0b1e4f 0%, #1e3a8a 45%, #0284c7 100%);
+  --radius: 24px;
+
+  font-family: 'Prompt', system-ui, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+  color-scheme: light dark;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0a1224;
+    --card: #111c35;
+    --text: #b4c3dc;
+    --text-h: #f0f7ff;
+    --muted: #7488a8;
+    --border: #1f2f52;
+    --accent: #60a5fa;
+    --accent-2: #38bdf8;
+    --accent-soft: #15284d;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -12px rgba(0, 0, 0, 0.6);
+    --nav-bg: rgba(17, 28, 53, 0.85);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background: var(--bg);
+  /* ปิดกรอบสีฟ้าเวลาแตะบนมือถือ ให้รู้สึกเหมือนแอป */
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a {
+  touch-action: manipulation;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
